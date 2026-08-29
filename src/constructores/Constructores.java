@@ -14,4 +14,7 @@ public class Persona {
     }    public Persona(String nombre, int edad) {
         this(nombre);
         this.edad = edad;
+    }    public Persona(String nombre, int edad, String documento) {
+        this(nombre, edad);
+        this.documento = documento;
     }
