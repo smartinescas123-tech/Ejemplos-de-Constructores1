@@ -11,4 +11,7 @@ public class Persona {
     }    public Persona(String nombre) {
         this();
         this.nombre = nombre;
+    }    public Persona(String nombre, int edad) {
+        this(nombre);
+        this.edad = edad;
     }
