@@ -17,4 +17,6 @@ public class Persona {
     }    public Persona(String nombre, int edad, String documento) {
         this(nombre, edad);
         this.documento = documento;
+    }    public void mostrarDatos() {
+        System.out.println("Nombre: " + nombre + " | Edad: " + edad + " | Documento: " + documento);
     }
