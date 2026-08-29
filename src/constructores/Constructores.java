@@ -1,22 +1,15 @@
 package constructores;
 
-public class Persona {
-    private String nombre;
-    private int edad;
-    private String documento;
-}    public Persona() {
-        this.nombre = "Sin nombre";
-        this.edad = 0;
-        this.documento = "Sin documento";
-    }    public Persona(String nombre) {
-        this();
-        this.nombre = nombre;
-    }    public Persona(String nombre, int edad) {
-        this(nombre);
-        this.edad = edad;
-    }    public Persona(String nombre, int edad, String documento) {
-        this(nombre, edad);
-        this.documento = documento;
-    }    public void mostrarDatos() {
-        System.out.println("Nombre: " + nombre + " | Edad: " + edad + " | Documento: " + documento);
+public class Main {
+    public static void main(String[] args) {
+        Persona p1 = new Persona();
+        Persona p2 = new Persona("Camila");
+        Persona p3 = new Persona("Andrés", 21);
+        Persona p4 = new Persona("Laura", 23, "1020304050");
+
+        p1.mostrarDatos();
+        p2.mostrarDatos();
+        p3.mostrarDatos();
+        p4.mostrarDatos();
     }
+}
