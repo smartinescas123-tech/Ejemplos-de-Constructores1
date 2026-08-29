@@ -8,4 +8,7 @@ public class Persona {
         this.nombre = "Sin nombre";
         this.edad = 0;
         this.documento = "Sin documento";
+    }    public Persona(String nombre) {
+        this();
+        this.nombre = nombre;
     }
