@@ -16,4 +16,7 @@ public class Producto {
     public void mostrarDatos() {
         System.out.println("Producto: " + nombre + " | Precio: $" + precio);
     }
-}
+}        Producto prod1 = new Producto();
+        Producto prod2 = new Producto("Teclado mecánico", 150000);
+        prod1.mostrarDatos();
+        prod2.mostrarDatos();
